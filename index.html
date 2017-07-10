@@ -10,7 +10,7 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-nav-demo" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><span aria-hidden="true" class="glyphicon glyphicon-picture"></span> EGoFstop Digital</a>
+					<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-nav-demo" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><span aria-hidden="true" class="glyphicon glyphicon-picture"></span> Design by Yvon</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-nav-demo">
 					<ul class="nav navbar-nav">
@@ -35,7 +35,7 @@
 	</header>
 	<div class="container">
 		<div class="jumbotron">
-			<h1>The Ultimate Survey</h1>
+			<h1><span><img src="images/if_surveys_60210.png" alt="survey icon"></span> Ultimate Survey</h1>
 			<p>Could this be the survey to rule 'em all?</p>
 		</div>
 	</div>
@@ -48,37 +48,131 @@
 			<div class="col-lg-8">
 				<form>
 				<div class="form-group row">
-					<label class="col-sm-2 col-form-label" for="inputEmail3">Email</label>
+					<label class="col-sm-2 col-form-label" for="inputEmail3">*Name</label>
+					<div class="col-sm-10">
+						<input class="form-control" id="inputName" placeholder="Enter your name" type="name">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="inputEmail3">*Email</label>
 					<div class="col-sm-10">
 						<input class="form-control" id="inputEmail3" placeholder="Email" type="email">
 					</div>
 				</div>
 				<div class="form-group row">
-					<label class="col-sm-2 col-form-label" for="inputPassword3">Password</label>
+					<label class="col-sm-2 col-form-label" for="inputEmail3"> *Age</label>
 					<div class="col-sm-10">
-						<input class="form-control" id="inputPassword3" placeholder="Password" type="password">
+						<input class="form-control" id="inputAge" placeholder="Age" type="age">
 					</div>
 				</div>
-				<fieldset class="form-group row">
-					<legend class="col-form-legend col-sm-2">Radios</legend>
-					<div class="col-sm-10">
-						<div class="form-check">
-							<label class="form-check-label"><input checked class="form-check-input" id="gridRadios1" name="gridRadios" type="radio" value="option1"> Option one is this and that&mdash;be sure to include why it's great</label>
-						</div>
-						<div class="form-check">
-							<label class="form-check-label"><input class="form-check-input" id="gridRadios2" name="gridRadios" type="radio" value="option2"> Option two can be something else and selecting it will deselect option one</label>
-						</div>
-						<div class="form-check disabled">
-							<label class="form-check-label"><input class="form-check-input" disabled id="gridRadios3" name="gridRadios" type="radio" value="option3"> Option three is disabled</label>
+				<div class="form-group row">
+					<label class="col-sm-6 col-form-label" for="options"> Which option best describes your current role?</label>
+					<div class="col-sm-6">
+						<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Student <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Student</a></li>
+							<li><a href="#">fulltime job</a></li>
+							<li><a href="#">fulltime learner</a></li>
+							<li><a href="#">Prefer not to say</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Other</a></li>
+						</ul>
 						</div>
 					</div>
-				</fieldset>
+				</div>
 				<div class="form-group row">
-					<label class="col-sm-2">Checkbox</label>
-					<div class="col-sm-10">
+
+						<label class="col-sm-6" for="radio">*How likely is that you would recommend CareerDevs Academy to a friend?</label>
+
+					<div class="col-sm-6">
 						<div class="form-check">
-							<label class="form-check-label"><input class="form-check-input" type="checkbox"> Check me out</label>
+							<label class="form-check-label"><input checked class="form-check-input" id="gridRadios1" name="gridRadios" type="radio" value="option1"> Definitely</label>
 						</div>
+						<div class="form-check">
+							<label class="form-check-label"><input class="form-check-input" id="gridRadios2" name="gridRadios" type="radio" value="option2"> Maybe</label>
+						</div>
+						<div class="form-check ">
+							<label class="form-check-label"><input class="form-check-input" disabled id="gridRadios3" name="gridRadios" type="radio" value="option3"> Note Sure</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-6 col-form-label" for="options"> What do you like most in CareerDevs Academy?</label>
+					<div class="col-sm-6">
+						<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Select an option <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Select an option</a></li>
+							<li><a href="#">Challenges</a></li>
+							<li><a href="#">projects</a></li>
+							<li><a href="#">Community</a></li>
+							<li><a href="#">Open Source</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>				
+
+				<div class="form-group row">
+					<label class="col-sm-6">Things that should be improved in the future (check all that apply):</label>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Front-end Projects
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Back-end Projects
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Data Visualization
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Challenges
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Open Source Community
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Gitter help rooms
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Videos
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> City Meetups
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Wiki
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Forum
+						</label>						
+					</div>
+					<div class="col-sm-6">
+						<label>
+						<input type="checkbox"> Additional Courses
+						</label>						
 					</div>
 				</div>
 				<div class="form-group row">
