@@ -6,9 +6,21 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.jumbotron img{
-    /*size: 150px 175px;*/
-    width: 300px;
+
+
+.container2{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.jb1{
+    flex: 3;
+}
+.jb1 img {
+    width: 100px;
+}
+.jb2{
+    flex: 9;
 }
 .container2 {
     width: 50%;
