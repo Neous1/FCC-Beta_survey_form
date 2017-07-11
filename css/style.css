@@ -1,10 +1,11 @@
 body{
 	padding-top: 70px;
+
 }
 
 .flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
 }
 
 
@@ -25,4 +26,34 @@ body{
 .container2 {
     width: 50%;
     align-content: center;
+}
+
+.jumbotron{
+    display: flex; 
+    flex-flow: column;
+}
+
+.name{
+    text-align: right;
+}
+.email{
+    text-align: right;
+}
+
+.age{
+    text-align: right;
+}
+
+.option{
+    text-align: right;
+}
+
+.recommend{
+    text-align: right;
+}
+.option2{
+    text-align: right;
+}
+.check{
+    text-align: right;
 }
